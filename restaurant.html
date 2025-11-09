@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>eat healthy live healthy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: maroon;
+            text-align: center;
+        }
+        a:link {
+            color: green;
+        }
+        a:visited {
+            color: red;
+        }
+        a:active {
+            color: blue;
+        }
+ a:hover::before {
+    content: "[";
+    color: black;
+}
+a:hover::after {
+    content: "]";
+    color: black;
+}
+
+        .container {
+            border: 1px solid black;
+            width: 70%;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+        }
+        .chef-img {
+            position: absolute;
+            top: 110px;
+            right: 20px;
+            width: 150px;
+            background: none;
+            mix-blend-mode: lighten;
+        }
+        .menu-table {
+            border: 2px solid blue;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        .menu-table caption {
+            color: blue;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .menu-table th, .menu-table td {
+            border: 2px solid blue;
+            padding: 8px;
+            text-align: center;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cartoon Chef Image -->
+        <img src="chef.png" alt="Cartoon Chef" class="chef-img" />
+
+        <h1>KHAO PIYO RESTAURANT</h1>
+
+        <p>Collect formation for</p>
+        <ul>
+            <li><a href="one.html">Menus</a></li>
+            <li><a href="two.html">Reservation</a></li>
+            <li><a href="three.html">Catering</a></li>
+            <li><a href="four.html">Tours</a></li>
+        </ul>
+
+        <!-- Restaurant Image -->
+        <img src="Restaurant.jpg" alt="Restaurant" width="300" />
+
+        <table class="menu-table">
+            <caption>Menus Available are</caption>
+            <tr><td>1</td><td>INDIAN</td></tr>
+            <tr><td>2</td><td>ITALIAN</td></tr>
+            <tr><td>3</td><td>CONTINENTAL</td></tr>
+            <tr><td>4</td><td>THAI</td></tr>
+        </table>
+
+        <div class="contact">
+            <p>For further enquiries and reservations <a href="mailto:abc@xyz.com"><strong>Contact Us.</strong></a></p>
+        </div>
+    </div>
+</body>
+</html>
