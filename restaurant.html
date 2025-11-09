@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>eat healthy live healthy</title>
+    <meta charset="UTF-8">
+    <title>Eat Healthy Live Healthy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -10,31 +12,40 @@
             color: maroon;
             text-align: center;
         }
+
+        /* Link styling - correct order */
         a:link {
             color: green;
         }
         a:visited {
             color: red;
         }
+        a:hover {
+            color: darkorange;
+        }
         a:active {
             color: blue;
         }
- a:hover::before {
-    content: "[";
-    color: black;
-}
-a:hover::after {
-    content: "]";
-    color: black;
-}
+
+        /* Brackets on hover */
+        a:hover::before {
+            content: "[";
+            color: black;
+        }
+        a:hover::after {
+            content: "]";
+            color: black;
+        }
 
         .container {
             border: 1px solid black;
-            width: 70%;
+            width: 90%;
+            max-width: 800px;
             margin: auto;
             padding: 20px;
             position: relative;
         }
+
         .chef-img {
             position: absolute;
             top: 110px;
@@ -43,21 +54,26 @@ a:hover::after {
             background: none;
             mix-blend-mode: lighten;
         }
+
         .menu-table {
             border: 2px solid blue;
             border-collapse: collapse;
             margin-top: 10px;
+            width: 100%;
         }
+
         .menu-table caption {
             color: blue;
             font-weight: bold;
             margin-bottom: 5px;
         }
+
         .menu-table th, .menu-table td {
             border: 2px solid blue;
             padding: 8px;
             text-align: center;
         }
+
         .contact {
             text-align: center;
             margin-top: 20px;
@@ -71,13 +87,16 @@ a:hover::after {
 
         <h1>KHAO PIYO RESTAURANT</h1>
 
-        <p>Collect formation for</p>
-        <ul>
-            <li><a href="one.html">Menus</a></li>
-            <li><a href="two.html">Reservation</a></li>
-            <li><a href="three.html">Catering</a></li>
-            <li><a href="four.html">Tours</a></li>
-        </ul>
+        <p>Collect information for:</p>
+
+        <nav>
+            <ul>
+                <li><a href="one.html">Menus</a></li>
+                <li><a href="two.html">Reservation</a></li>
+                <li><a href="three.html">Catering</a></li>
+                <li><a href="four.html">Tours</a></li>
+            </ul>
+        </nav>
 
         <!-- Restaurant Image -->
         <img src="restaurant.jpg" alt="Restaurant" width="300" />
